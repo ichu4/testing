@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>ShowHide Example</title>
+	
+	<!-- Get the jQuery URL from here: http://jquery.com -->
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+
+	<script>
+	$(document).ready(function() {
+	
+		$("#hide-heading").click(function(){
+		$("#heading").hide(3000);
+		});
+		
+		$("#show-heading").click(function(){
+		$("#heading").show(3000);
+		});
+
+		$("#toggle-heading").click(function(){
+		$("#heading").toggle(3000);
+		});
+		
+	});
+	</script>	
+	
+	<style media="screen">
+		ul { list-style: none; }	
+	</style>	
+</head>
+
+<body>
+<div id="heading">	
+<h1>Site Heading</h1>
+<p>This is the heading section, that might contain any amount of HTML, CSS, etc.</p>
+<p>This section, an ID called #heading, is the one you want modified by jQuery.</p>
+</div>
+
+<div class="examples">
+<ul>
+   <li><a href="#" id="hide-heading">Hide</a></li>
+   <li><a href="#" id="show-heading">Show</a></li>
+   <li><a href="#" id="toggle-heading">Toggle</a></li>
+</ul>
+</div>
+
+</body>
+</html>
